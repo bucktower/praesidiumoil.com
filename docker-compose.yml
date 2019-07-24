@@ -1,0 +1,10 @@
+version: '3'
+services:
+  bdweb-static:
+    build:
+      context: .
+      dockerfile: Dockerfile-dev
+    volumes:
+      - './:/usr/share/nginx/html'
+    ports:
+      - "8080:80"
