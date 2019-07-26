@@ -1,0 +1,175 @@
+@font-face {
+    font-family: 'SinaNovaReg';
+    src: url('SinaNovaReg-webfont.woff2') format('woff2'),
+         url('SinaNovaReg-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+  --main-color: white;
+  --complement-color: #4F5551;
+}
+
+body {
+  margin: 0px;
+  font-family: 'SinaNovaReg';
+  color: var(--complement-color);
+}
+
+
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
+
+/* Splash page */
+
+.center-me { 
+  background: url(../assets/main.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
+}
+
+
+#logo {
+  height: 15vh;
+  margin: 25vh;
+}
+
+.main-btn {
+  background-color: transparent;
+  color: var(--main-color);
+  border: 2px solid var(--main-color);
+  transition: color 170ms ease-in-out, border-color 170ms ease-in-out;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.main-btn:hover {
+  background-color: var(--main-color);
+  color: var(--complement-color);
+}
+
+/* Top nav */
+
+.logo-mini {
+  height: 100px;
+}
+
+
+.mid h1 {
+  text-align: center;
+}
+
+.mid p {
+  text-align: left;
+}
+
+.top {
+  background: url(../assets/otherbg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 575px;
+}
+
+.mid {
+  background-color: white;
+  /*height: 80vh;*/
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.foot {
+  height: 5vh;
+  text-align: center;
+  background-color: var(--complement-color);
+  color: var(--main-color);
+  padding-top: 3vh;
+}
+
+.navbar {
+  display: flex;
+}
+
+.nav-logo {
+  flex-grow: 1;
+}
+
+.nav-header-links {
+  text-align: right;
+  flex-grow: 3;
+  margin-top: 50px;
+  letter-spacing: 2px;
+}
+
+.nav-header-links a {
+  text-decoration: none;
+  margin-right: 50px;
+  color: #f2f2f2;
+  transition: color 170ms ease-in-out,
+}
+
+.nav-header-links a:hover {
+  color: #fff;
+}
+
+.page-header {
+  text-align: center;
+  color: var(--main-color);
+  font-size: 56px;
+  margin-top: 70px;
+}
+
+/* About */
+
+.center p {
+  text-align: center;
+}
+
+/* Prospects */
+
+#map {
+  width: 60%;
+}
+
+/* Team */
+
+.team-list {
+  text-align: left;
+}
+
+h5 {
+  color: grey;
+}
+
+/* Contact */
+
+.contact-form {
+  text-align: center;
+}
+
+.contact {
+  text-align: center;
+}
+
+.contact p {
+  text-align: center;
+}
+
+.mapouter {
+  left: 50%;
+  transform: translateX(-50%);
+}
