@@ -10,13 +10,12 @@ function myFunction() {
 var onresize = function() {
    //your code here
    //this is just an example
-   width = document.body.clientWidth;
-   height = document.body.clientHeight;
+   var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
    
   var x = document.getElementById("mobileNav");
   var y = document.getElementById("nvbr");
    
-   if (width <= 770) {
+   if (width <= 770 || /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
      x.style.display = "block";
      y.style.display = "none";
      
