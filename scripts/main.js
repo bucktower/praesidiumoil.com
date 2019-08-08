@@ -7,10 +7,20 @@ function myFunction() {
   }
 }
 
+var onintro = function() {
+  var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+  var z = document.getElementById("main-btn");
+  if (width <= 770 || /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    z.style.backgroundColor = "white"
+    z.style.borderColor = "#4F5551";
+    z.style.color = "#4F5551"
+  }
+}
+
 var onresize = function() {
    //your code here
    //this is just an example
-   var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+  var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
    
   var x = document.getElementById("mobileNav");
   var y = document.getElementById("nvbr");
