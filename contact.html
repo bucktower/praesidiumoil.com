@@ -4,23 +4,26 @@
     <meta charset="UTF-8">
     <title>Praesidium Oil</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
-    <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/main.css">
   </head>
-  <body class="preload" onload="onresize()">
+  <body class="preload" id="main" onload="onresize()">
     <div class="contact-top">
       <div class="topnav" id="mobileNav">
-        <a href="#home" class="active">Praesidium Oil</a>
         <!-- Navigation links (hidden by default) -->
-        <div id="myLinks">
+        <div class="mob-nav-ctr">
+          <a href="/" style="width:150px;">
+            <img src="assets/logo.svg" />
+          </a>
+          <span class="mob-nav-tgl" onclick="openNav()"><i class="fa fa-bars"></i></span>
+        </div>
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
           <a href="about.html">ABOUT US</a>
           <a href="prospects.html">PROSPECTS</a>
           <a href="team.html">TEAM</a>
-          <a href="contact.html">CONTACT US</a>
+          <a class="contact-btn" href="contact.html">CONTACT US</a>
         </div>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
       </div>
       <div class="navbar" id="nvbr">
         <a class="nav-logo" href="/">
@@ -47,12 +50,13 @@
         
         <form action="https://formsubmit.co/info@praesidiumoil.com" method="POST" enctype="text/plain">
           <div class="row">
+            <label id="name-label">Name</label>
+          </div>
+          <div class="row">
             <div class="six columns">
-              <label id="name-label">Name</label>
               <input type="text" name="first-name" size="20" placeholder="First name" />
             </div>
             <div class="six columns">
-              <label>&nbsp;</label>
               <input type="text" name="last-name" size="20" placeholder="Last name" />
             </div>
           </div>
