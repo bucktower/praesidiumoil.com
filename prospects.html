@@ -4,23 +4,26 @@
     <meta charset="UTF-8">
     <title>Praesidium Oil</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
-    <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/main.css">
   </head>
   <body class="preload" onload="onresize()">
     <div class="prospects-top">
       <div class="topnav" id="mobileNav">
-        <a href="#home" class="active">Praesidium Oil</a>
         <!-- Navigation links (hidden by default) -->
-        <div id="myLinks">
+        <div class="mob-nav-ctr">
+          <a href="/" style="width:150px;">
+            <img src="assets/logo.svg" />
+          </a>
+          <span class="mob-nav-tgl" onclick="openNav()"><i class="fa fa-bars"></i></span>
+        </div>
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
           <a href="about.html">ABOUT US</a>
           <a href="prospects.html">PROSPECTS</a>
           <a href="team.html">TEAM</a>
-          <a href="contact.html">CONTACT US</a>
+          <a class="contact-btn" href="contact.html">CONTACT US</a>
         </div>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
       </div>
       <div class="navbar" id="nvbr">
         <a class="nav-logo" href="/">
