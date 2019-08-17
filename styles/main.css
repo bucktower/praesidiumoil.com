@@ -6,6 +6,10 @@
     font-style: normal;
 }
 
+input {
+  font-family: 'SinaNovaReg';
+}
+
 :root {
   --main-color: white;
   --complement-color: #4F5551;
@@ -282,6 +286,7 @@ body {
   background-color: var(--complement-color);
   color: var(--main-color);
   -webkit-appearance: none;
+  text-transform: none;
 }
 
 .contact-form textarea {
@@ -365,7 +370,7 @@ body {
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 36px;
+  font-size: 66px;
   color: #818181;
   display: block;
   transition: 0.3s;
@@ -380,8 +385,8 @@ body {
 .sidenav .closebtn {
   position: absolute;
   top: 0;
-  right: 25px;
-  font-size: 36px;
+  right: 45px;
+  font-size: 96px;
   margin-left: 50px;
 }
 
@@ -394,7 +399,7 @@ body {
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+  .sidenav a {font-size: 28px;}
 }
 
 /* More mobile nav */
@@ -405,10 +410,10 @@ body {
 
 .fa-bars {
   color: white;
-  padding-right: 40px;
-  padding-top: 40px;
+  padding-right: 60px;
+  padding-top: 60px;
 }
 
 .fa {
-  font-size: 30px;
+  font-size: 60px;
 }
