@@ -24,6 +24,10 @@ body {
   font-size: 18px;
 }
 
+.mid p {
+  text-align: justify;
+  text-justify: inter-word;
+}
 
 .preload * {
   -webkit-transition: none !important;
@@ -84,10 +88,6 @@ body {
 
 .mid h1 {
   text-align: center;
-}
-
-.mid p {
-  text-align: left;
 }
 
 .top {
@@ -421,4 +421,23 @@ body {
 
 .fa {
   font-size: 60px;
+}
+
+.affiliates {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /*flex-wrap: wrap;*/
+  flex: 1 1 0px;
+}
+
+.affiliates img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.affiliates div {
+  flex-grow: 1;
+  flex-basis: 25%;
+  text-align: center;
 }
