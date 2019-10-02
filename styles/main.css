@@ -8,6 +8,7 @@
 
 input {
   font-family: 'SinaNovaReg';
+  font-size: 18px;
 }
 
 :root {
@@ -38,7 +39,7 @@ body {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  /*background-size: cover;*/
   height: 100vh;
   text-align: center;
 }
@@ -46,10 +47,7 @@ body {
 
 #logo {
   width: 70%;
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-top: 0;
-  margin-bottom: 10vh;
+  margin: 0;
   max-width: 700px;
   min-width: 400px;
 }
@@ -63,6 +61,12 @@ body {
   text-decoration: none;
   font-size: 30px;
   letter-spacing: 2px;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 60px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%)
 }
 
 #main-btn:hover {
@@ -287,6 +291,7 @@ body {
   color: var(--main-color);
   -webkit-appearance: none;
   text-transform: none;
+  font-size: 18px;
 }
 
 .contact-form textarea {
